@@ -61,7 +61,7 @@ server_name YOURSITE.COM;
 ```
 
 5.3: کد زیر رو در جای مشخص شده که در ویدیو گفته شده جایگذاری کنید یعنی در زیر location
-
+```
 location /ports {
         if ($http_upgrade != "websocket") {
             return 404;
@@ -81,38 +81,53 @@ location /ports {
         }
         return 404;
     }
+```
 
 
 5.4: با دستور cd برگردین به دایرکتوری روت
+```
 cd
-
+```
 
 6: حالا nginx رو ری استارت کنید.
+```
 systemctl restart nginx
-
+```
 
 7: گرفتن ssl برای دامنه
+```
 certbot --nginx -d YOURSITE.COM --register-unsafely-without-email
-
+```
 
 8: در این مرحله برین به کلودفلر و پروکسی رو روشن کنید و SSL/TLS رو روی فول بزارین.
+```
 CloudFlare = proxy on + SSL/TLS = Full 
-
+```
 
 9: در این مرحله پنل مورد نیاز خودتون رو نصب میکنید مثل پنل چینی و یا سنایی و… میتونین از ویدیو زیر که چندتا خوب هاش رو معرفی کردم هم استفاده کنید.
+```
 https://youtu.be/Om3fgIJoCh4
+```
  و یا پنل چینی رو نصب کنید.
+ ```
 bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
-
+```
 
 10: و در آخر اگه فایروال دارین و فعال هستش:
 
-
 برای فهمیدن فعال بودن فایروال:
+```
 ufw status
+```
 برای نصب فایروال:
+```
 apt install ufw -y
+```
 برای آزاد کردن پورت های مورد نیاز:
+```
 ufw allow PORT/tcp
+```
 برای مثال:
+```
 ufw allow 22/tcp
+```
