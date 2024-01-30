@@ -4,44 +4,66 @@
 Easy to sell with <a href="https://github.com/sparkvps/reverse-proxy-nginx-tls/">spark vps proxy</a> easy install with few clicks
 </p>
 
+<p align="center">
+A smart proxy with high security
+</p>
 
-### دستورات:
+[![Telegram Channel](https://img.shields.io/endpoint?label=Channel&style=flat-square&url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Fwizwizch&color=blue)](https://t.me/sparkvps)
+\>
+</div>
+
+
+<br>
+<br>
+
+### دستورات
+
 
 
 نکته= برین به کلودفلر و پروکسی رو خاموش کنید و SSL/TLS رو Flexible بزارین.
 
-# Cloudflare proxy = off + SSL/TLS = Flexible
+```
+Cloudflare proxy = off + SSL/TLS = Flexible
+```
+
+- 1: سیستم را آپدیت کنید:
+```
+apt-get update -y && apt-get upgrade -y
+```
+
+- 2: بسته های مورد نیاز را نصب کنید:
+```
+sudo apt install nginx certbot python3-certbot-nginx -y
+```
+
+- 3: فایل HTML را کپی کنید:
+````
+cp /etc/nginx/sites-available/default /etc/nginx/sites-available/YOURSITE.COM
+````
 
 
-1: سیستم را آپدیت کنید:
-@ apt-get update -y && apt-get upgrade -y
-
-
-2: بسته های مورد نیاز را نصب کنید:
-* sudo apt install nginx certbot python3-certbot-nginx -y
-
-
-3: فایل HTML را کپی کنید:
-```` cp /etc/nginx/sites-available/default /etc/nginx/sites-available/YOURSITE.COM ````
-
-
-4: لینک کردن:
+- 4: لینک کردن:
+```
 & ln -s /etc/nginx/sites-available/YOURSITE.COM /etc/nginx/sites-enabled/
+```
 
-
-5: تغییر دایرکتوری:
+- 5: تغییر دایرکتوری:
+```
 cd /etc/nginx/sites-enabled && ls -la
-
+```
 
 5.1: فایل زیر را باز کنید و در قسمتی که نوشته شده listen 80 & listen [::]:80 بیاین جمله default_server رو پاک کنید.
+```
 nano /etc/nginx/sites-available/YOURSITE.COM
-
+```
 
 5.2: در قسمتی که نوشته شده server_name باید ادرس سایت خودتون رو به شکل زیر وارد کنید.
+```
 server_name YOURSITE.COM;
-
+```
 
 5.3: کد زیر رو در جای مشخص شده که در ویدیو گفته شده جایگذاری کنید یعنی در زیر location
+
 location /ports {
         if ($http_upgrade != "websocket") {
             return 404;
