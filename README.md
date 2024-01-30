@@ -22,9 +22,7 @@ A smart proxy with high security
 
 نکته= برین به کلودفلر و پروکسی رو خاموش کنید و SSL/TLS رو Flexible بزارین.
 
-```
-Cloudflare proxy = off + SSL/TLS = Flexible
-```
+```Cloudflare proxy = off + SSL/TLS = Flexible```
 
 - 1: سیستم را آپدیت کنید:
 ```
