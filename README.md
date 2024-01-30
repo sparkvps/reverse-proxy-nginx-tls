@@ -2,11 +2,12 @@
 
 
 نکته= برین به کلودفلر و پروکسی رو خاموش کنید و SSL/TLS رو Flexible بزارین.
-Cloudflare proxy = off + SSL/TLS = Flexible
+
+# Cloudflare proxy = off + SSL/TLS = Flexible
 
 
 1: سیستم را آپدیت کنید:
-apt-get update -y && apt-get upgrade -y
+# apt-get update -y && apt-get upgrade -y
 
 
 2: بسته های مورد نیاز را نصب کنید:
