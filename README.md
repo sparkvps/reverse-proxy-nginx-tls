@@ -9,7 +9,7 @@ A smart proxy with high security
 </p>
 
 [![Telegram Channel](https://img.shields.io/endpoint?label=Channel&style=flat-square&url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Fwizwizch&color=blue)](https://t.me/sparkvps)
-\>
+\
 </div>
 
 
