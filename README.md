@@ -15,7 +15,7 @@
 
 
 3: فایل HTML را کپی کنید:
-% cp /etc/nginx/sites-available/default /etc/nginx/sites-available/YOURSITE.COM
+```` cp /etc/nginx/sites-available/default /etc/nginx/sites-available/YOURSITE.COM ````
 
 
 4: لینک کردن:
