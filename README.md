@@ -4,10 +4,8 @@
 Easy to sell with <a href="https://github.com/sparkvps/reverse-proxy-nginx-tls/">spark vps proxy</a> easy install with few clicks
 </p>
 
-<p align="center">
+<p text-align="center">
 A smart proxy with high security
-<a href="https://t.me/sparkvps"> Telegram Channell</a>
-
 [![Telegram Channel](https://img.shields.io/endpoint?label=Channel&style=flat-square&url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Fwizwizch&color=blue)](https://t.me/sparkvps)
 
 </p>
