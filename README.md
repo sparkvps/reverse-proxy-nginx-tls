@@ -7,19 +7,19 @@
 
 
 1: سیستم را آپدیت کنید:
-# apt-get update -y && apt-get upgrade -y
+@ apt-get update -y && apt-get upgrade -y
 
 
 2: بسته های مورد نیاز را نصب کنید:
-sudo apt install nginx certbot python3-certbot-nginx -y
+* sudo apt install nginx certbot python3-certbot-nginx -y
 
 
 3: فایل HTML را کپی کنید:
-cp /etc/nginx/sites-available/default /etc/nginx/sites-available/YOURSITE.COM
+% cp /etc/nginx/sites-available/default /etc/nginx/sites-available/YOURSITE.COM
 
 
 4: لینک کردن:
-ln -s /etc/nginx/sites-available/YOURSITE.COM /etc/nginx/sites-enabled/
+& ln -s /etc/nginx/sites-available/YOURSITE.COM /etc/nginx/sites-enabled/
 
 
 5: تغییر دایرکتوری:
